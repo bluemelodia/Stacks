@@ -11,6 +11,7 @@ import SwiftUI
 public struct MainView: View {
     public var viewModel: ViewModel
     @State var isPresented = false
+    @State var showSplashScreen = false
 
     public init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -35,9 +36,9 @@ public struct MainView: View {
         .onReceive(viewModel.$showDataStatus, perform: { status in
             switch(status) {
             case .show:
-                isPresented = false
+                showSplashScreen = false
             case .hideSensitiveData:
-                isPresented = true
+                showSplashScreen = true
             }
         })
         .sheet(isPresented: $isPresented, content: {
@@ -46,7 +47,8 @@ public struct MainView: View {
                 Text("You are in a modal sheet.")
             }
         })
-        .fullScreenCover(isPresented: $isPresented, content: {
+        /// This fails to cover the contents of the app if a modal is presented at the time the user backgrounds the app.
+        .fullScreenCover(isPresented: $showSplashScreen, content: {
             ZStack {
                 Color.yellow
                 Text("This is the SwiftUI splash screen.")

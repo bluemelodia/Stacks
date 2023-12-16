@@ -59,6 +59,7 @@ class ViewController: UIViewController {
             forName: UIApplication.willEnterForegroundNotification,
             object: nil,
             queue: nil) { _ in
+                /// Deliberately keep the splash screen up for longer, for ease of testing.
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     viewModel?.updateShowDataStatus(.show)
                 }
