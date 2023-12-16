@@ -3,4 +3,211 @@
    uuid = "100596F4-7434-489E-9798-768289E85E0E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "331E800D-E7CB-4787-9B94-0A01B16CEEEB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stacks/SplashScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "showSplashScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "331E800D-E7CB-4787-9B94-0A01B16CEEEB - 4ab1717b0e1522cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showSplashScreen() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/SplashScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "331E800D-E7CB-4787-9B94-0A01B16CEEEB - 4ab1717b0e152077"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showSplashScreen() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/SplashScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "331E800D-E7CB-4787-9B94-0A01B16CEEEB - 4ab1717b0e1522cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showSplashScreen() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/SplashScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44D1C3DC-CCA7-4FAE-92A9-293F75F05872"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stacks/SplashScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "showSplashScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44D1C3DC-CCA7-4FAE-92A9-293F75F05872 - 4ab1717b0e152056"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showSplashScreen() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/SplashScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "44D1C3DC-CCA7-4FAE-92A9-293F75F05872 - 4ab1717b0e152098"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showSplashScreen() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/SplashScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "44D1C3DC-CCA7-4FAE-92A9-293F75F05872 - 4ab1717b0e1522cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showSplashScreen() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/SplashScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3113FC37-5B73-4E92-8963-782B5F8D0DD9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stacks/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "addLifecycleObservers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3113FC37-5B73-4E92-8963-782B5F8D0DD9 - b3f4b4f56921595b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Foundation.Notification) -&gt; () in Stacks.ViewController.addLifecycleObservers() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "3113FC37-5B73-4E92-8963-782B5F8D0DD9 - d4f33b16b4c76c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #2 @Sendable (Foundation.Notification) -&gt; () in Stacks.ViewController.addLifecycleObservers() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "3113FC37-5B73-4E92-8963-782B5F8D0DD9 - d4f33b16b4c7684"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #2 @Sendable (Foundation.Notification) -&gt; () in Stacks.ViewController.addLifecycleObservers() -&gt; ()"
+                  moduleName = "Stacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/missguac/Desktop/Stacks/Stacks/Stacks/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFFE0816-577F-4AEB-B53E-F3B100B331AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stacks/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

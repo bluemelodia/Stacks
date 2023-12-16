@@ -11,12 +11,23 @@ import SwiftUI
 class ViewController: UIViewController {
     var mainView: MainView?
     var viewModel: ViewModel?
+    var splashScreenVC = SplashScreenViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
         addLifecycleObservers()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        splashScreenVC = SplashScreenViewController()
+//        guard let splashScreenVC else {
+//            return
+//        }
+//        splashScreenVC.modalPresentationStyle = .fullScreen
+//        present(splashScreenVC, animated: false)
     }
 
     /// Present the SwiftUI view.
@@ -56,9 +67,10 @@ class ViewController: UIViewController {
             queue: nil) { _ in
                 /// UIKit approach
                 showSplashScreen()
+                self.present(self.splashScreenVC, animated: false)
 
                 /// SwiftUI approach
-                // viewModel?.updateShowDataStatus(.hideSensitiveData)
+                //viewModel?.updateShowDataStatus(.hideSensitiveData)
         }
 
         NotificationCenter.default.addObserver(
@@ -67,17 +79,17 @@ class ViewController: UIViewController {
             queue: nil) { _ in
                 /// UIKit approach
                 /// Deliberately keep the splash screen up for longer, for ease of testing.
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) {
                     hideSplashScreen()
+                    self.dismiss(animated: false)
                 }
 
                 /// SwiftUI approach
                 /// Deliberately keep the splash screen up for longer, for ease of testing.
-                /*
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    viewModel?.updateShowDataStatus(.show)
-                }
-                */
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+//                    viewModel?.updateShowDataStatus(.show)
+//                }
+
         }
     }
 }

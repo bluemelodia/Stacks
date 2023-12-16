@@ -10,7 +10,7 @@ import SwiftUI
 
 public struct MainView: View {
     public var viewModel: ViewModel
-    @State var isPresented = false
+    @State var isPresented = true
     @State var showSplashScreen = false
 
     public init(viewModel: ViewModel) {

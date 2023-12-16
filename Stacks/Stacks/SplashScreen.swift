@@ -36,14 +36,14 @@ extension UIViewController {
             controller = presentedViewController
         }
 
-        if controller != self {
-            doShowSplashScreen(screen: SplashScreen.shared.modalSplashScreen)
-        }
+//        if controller != self {
+//            doShowSplashScreen(screen: SplashScreen.shared.modalSplashScreen)
+//        }
 
         /// Force dismiss the modal before presenting the splash screen - not ideal.
         /*guard controller == self else {
             controller.dismiss(animated: false) {
-                showSplashScreenCallback(screen: SplashScreen.shared.splashScreen)
+                showSplashScreenCallback(SplashScreen.shared.splashScreen)
             }
             return
         }*/

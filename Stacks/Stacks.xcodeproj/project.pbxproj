@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141C4AEF2B2E5B810065B588 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C4AEE2B2E5B810065B588 /* SplashScreenViewController.swift */; };
 		14E909052B2DF00D00834DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909042B2DF00D00834DC6 /* AppDelegate.swift */; };
 		14E909072B2DF00D00834DC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909062B2DF00D00834DC6 /* SceneDelegate.swift */; };
 		14E909092B2DF00D00834DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909082B2DF00D00834DC6 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141C4AEE2B2E5B810065B588 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		14E909012B2DF00D00834DC6 /* Stacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E909042B2DF00D00834DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E909062B2DF00D00834DC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				14E909062B2DF00D00834DC6 /* SceneDelegate.swift */,
 				14E9091B2B2DF37200834DC6 /* Notification.swift */,
 				14E9091D2B2DF63300834DC6 /* SplashScreen.swift */,
+				141C4AEE2B2E5B810065B588 /* SplashScreenViewController.swift */,
 				14E909082B2DF00D00834DC6 /* ViewController.swift */,
 				14E909182B2DF01F00834DC6 /* SwiftUI */,
 				14E9090A2B2DF00D00834DC6 /* Main.storyboard */,
@@ -163,6 +166,7 @@
 			files = (
 				14E9091E2B2DF63300834DC6 /* SplashScreen.swift in Sources */,
 				14E909092B2DF00D00834DC6 /* ViewController.swift in Sources */,
+				141C4AEF2B2E5B810065B588 /* SplashScreenViewController.swift in Sources */,
 				14E9091C2B2DF37200834DC6 /* Notification.swift in Sources */,
 				14E9091A2B2DF06C00834DC6 /* MainView.swift in Sources */,
 				14E909052B2DF00D00834DC6 /* AppDelegate.swift in Sources */,
