@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         setupView()
+        addLifecycleObservers()
     }
 
     /// Present the SwiftUI view.
@@ -38,6 +39,22 @@ class ViewController: UIViewController {
         ])
 
         hostingController.didMove(toParent: self)
+    }
+
+    private func addLifecycleObservers() {
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.didEnterBackgroundNotification,
+            object: nil,
+            queue: nil) { _ in
+                Notifications.postShowSplashScreenNotification()
+        }
+
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.willEnterForegroundNotification,
+            object: nil,
+            queue: nil) { _ in
+                Notifications.postHideSplashScreenNotification()
+        }
     }
 }
 
