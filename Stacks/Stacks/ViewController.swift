@@ -10,6 +10,7 @@ import SwiftUI
 
 class ViewController: UIViewController {
     var mainView: MainView?
+    var viewModel: ViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,10 @@ class ViewController: UIViewController {
 
     /// Present the SwiftUI view.
     private func setupView() {
-        mainView = MainView()
+        viewModel = ViewModel()
+
+        guard let viewModel else { return }
+        mainView = MainView(viewModel: viewModel)
 
         let hostingController = UIHostingController(rootView: mainView)
         guard let hostingView = hostingController.view else { return }
@@ -42,18 +46,22 @@ class ViewController: UIViewController {
     }
 
     private func addLifecycleObservers() {
+        let viewModel = self.viewModel
+
         NotificationCenter.default.addObserver(
             forName: UIApplication.didEnterBackgroundNotification,
             object: nil,
             queue: nil) { _ in
-                Notifications.postShowSplashScreenNotification()
+                viewModel?.updateShowDataStatus(.hideSensitiveData)
         }
 
         NotificationCenter.default.addObserver(
             forName: UIApplication.willEnterForegroundNotification,
             object: nil,
             queue: nil) { _ in
-                Notifications.postHideSplashScreenNotification()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    viewModel?.updateShowDataStatus(.show)
+                }
         }
     }
 }
