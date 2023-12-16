@@ -67,14 +67,14 @@ class ViewController: UIViewController {
             queue: nil) { _ in
                 /// UIKit approach
                 /// Deliberately keep the splash screen up for longer, for ease of testing.
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     hideSplashScreen()
                 }
 
                 /// SwiftUI approach
                 /// Deliberately keep the splash screen up for longer, for ease of testing.
                 /*
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     viewModel?.updateShowDataStatus(.show)
                 }
                 */

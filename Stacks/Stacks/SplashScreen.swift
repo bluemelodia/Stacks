@@ -18,6 +18,12 @@ public class SplashScreen {
         screen.backgroundColor = .blue
         return screen
     }()
+
+    let modalSplashScreen: UIView = {
+        let screen = UIView.init()
+        screen.backgroundColor = .blue
+        return screen
+    }()
 }
 
 extension UIViewController {
@@ -30,18 +36,24 @@ extension UIViewController {
             controller = presentedViewController
         }
 
+        if controller != self {
+            doShowSplashScreen(screen: SplashScreen.shared.modalSplashScreen)
+        }
+
+        /// Force dismiss the modal before presenting the splash screen - not ideal.
+        /*
         guard controller == self else {
             controller.dismiss(animated: false) {
                 showSplashScrenCallback()
             }
             return
         }
+         */
 
-        doShowSplashScreen()
+        doShowSplashScreen(screen: SplashScreen.shared.splashScreen)
     }
 
-    private func doShowSplashScreen() {
-        let screen = SplashScreen.shared.splashScreen
+    private func doShowSplashScreen(screen: UIView) {
         screen.frame = view.frame
         view.addSubview(screen)
         view.bringSubviewToFront(screen)
@@ -49,8 +61,8 @@ extension UIViewController {
     }
 
     @MainActor func hideSplashScreen() {
-        let screen = SplashScreen.shared.splashScreen
-        screen.removeFromSuperview()
+        SplashScreen.shared.splashScreen.removeFromSuperview()
+        SplashScreen.shared.modalSplashScreen.removeFromSuperview()
     }
 }
 
