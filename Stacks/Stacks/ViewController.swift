@@ -47,22 +47,37 @@ class ViewController: UIViewController {
 
     private func addLifecycleObservers() {
         let viewModel = self.viewModel
+        let showSplashScreen = showSplashScreen
+        let hideSplashScreen = hideSplashScreen
 
         NotificationCenter.default.addObserver(
             forName: UIApplication.didEnterBackgroundNotification,
             object: nil,
             queue: nil) { _ in
-                viewModel?.updateShowDataStatus(.hideSensitiveData)
+                /// UIKit approach
+                showSplashScreen()
+
+                /// SwiftUI approach
+                // viewModel?.updateShowDataStatus(.hideSensitiveData)
         }
 
         NotificationCenter.default.addObserver(
             forName: UIApplication.willEnterForegroundNotification,
             object: nil,
             queue: nil) { _ in
+                /// UIKit approach
                 /// Deliberately keep the splash screen up for longer, for ease of testing.
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    hideSplashScreen()
+                }
+
+                /// SwiftUI approach
+                /// Deliberately keep the splash screen up for longer, for ease of testing.
+                /*
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     viewModel?.updateShowDataStatus(.show)
                 }
+                */
         }
     }
 }

@@ -15,7 +15,7 @@
 		14E909112B2DF00F00834DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E9090F2B2DF00F00834DC6 /* LaunchScreen.storyboard */; };
 		14E9091A2B2DF06C00834DC6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909192B2DF06C00834DC6 /* MainView.swift */; };
 		14E9091C2B2DF37200834DC6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9091B2B2DF37200834DC6 /* Notification.swift */; };
-		14E9091E2B2DF63300834DC6 /* SplashScreen-UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9091D2B2DF63300834DC6 /* SplashScreen-UIKit.swift */; };
+		14E9091E2B2DF63300834DC6 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9091D2B2DF63300834DC6 /* SplashScreen.swift */; };
 		14E909222B2DF6A100834DC6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909212B2DF6A100834DC6 /* ViewModel.swift */; };
 		14E909242B2DF77700834DC6 /* DataStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909232B2DF77700834DC6 /* DataStatus.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		14E909122B2DF00F00834DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E909192B2DF06C00834DC6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		14E9091B2B2DF37200834DC6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		14E9091D2B2DF63300834DC6 /* SplashScreen-UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashScreen-UIKit.swift"; sourceTree = "<group>"; };
+		14E9091D2B2DF63300834DC6 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		14E909212B2DF6A100834DC6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		14E909232B2DF77700834DC6 /* DataStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +70,7 @@
 				14E909232B2DF77700834DC6 /* DataStatus.swift */,
 				14E909062B2DF00D00834DC6 /* SceneDelegate.swift */,
 				14E9091B2B2DF37200834DC6 /* Notification.swift */,
-				14E9091D2B2DF63300834DC6 /* SplashScreen-UIKit.swift */,
+				14E9091D2B2DF63300834DC6 /* SplashScreen.swift */,
 				14E909082B2DF00D00834DC6 /* ViewController.swift */,
 				14E909182B2DF01F00834DC6 /* SwiftUI */,
 				14E9090A2B2DF00D00834DC6 /* Main.storyboard */,
@@ -161,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E9091E2B2DF63300834DC6 /* SplashScreen-UIKit.swift in Sources */,
+				14E9091E2B2DF63300834DC6 /* SplashScreen.swift in Sources */,
 				14E909092B2DF00D00834DC6 /* ViewController.swift in Sources */,
 				14E9091C2B2DF37200834DC6 /* Notification.swift in Sources */,
 				14E9091A2B2DF06C00834DC6 /* MainView.swift in Sources */,
